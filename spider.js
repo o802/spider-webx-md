@@ -3145,7 +3145,7 @@ const title = data.result.title;
 //========================================================================================================================//		      
  case 'sc': case 'script': case 'repo':
 
- client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/416c3ae0cfe59be8db011.jpg` }, caption: 
+ client.sendMessage(m.chat, { image: { url: `https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDV3OWJraWEyOGN2b2tsdGtqNnFiMTdseHEwYmR3aHA0dTBpaHVoYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DPkmxreCZxr7QD9Bq8/giphy.gif` }, caption: 
 ` Hello👋 *${pushname}*,You can deploy 𝐒𝐏𝐈𝐃𝐄𝐑-𝐁𝐎𝐓 using the GitHub link below 𓅂\n\nFork and give us a star✨.\n\n https://github.com/spider660/spider-webx-md\n\nLink with your whatsapp using pairing link below\n\nhttps://spider-bot-pair.onrender.com\n\nCopy the session_id and Fill in the required Variables before Deploy\n\nEnjoy and have fun with ░𝐒𝐏𝐈𝐃𝐄𝐑-𝐁𝐎𝐓░\n\n𝗠𝗮𝗱𝗲 𝗼𝗻 𝗲𝗮𝗿𝘁𝗵 𝗯𝘆 𝐒𝐏𝐈𝐃𝐄𝐑!`},{quoted : m });
 
    break;
