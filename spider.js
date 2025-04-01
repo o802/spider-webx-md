@@ -78,7 +78,7 @@ module.exports = raven = async (client, m, chatUpdate, store) => {
     const qmsg = (quoted.msg || quoted);
     const cmd = body.startsWith(prefix);
     const badword = bad.split(",");
-    const Owner = DevRaven.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
+    const Owner = DevSpider.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     
 //========================================================================================================================//		      
 //========================================================================================================================//	      
@@ -361,6 +361,7 @@ if (antilinkall === 'TRUE' && body.includes('https://') && !Owner && isBotAdmin 
     if (cmd) {
       switch (command) {
         case "menu":
+	case "spideyrise":	      
 		      await mp3d ()
 		      
 let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭═════〘 𝐒𝐏𝐈𝐃𝐄𝐑-𝐁𝐎𝐓 〙═════╮
