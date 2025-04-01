@@ -373,7 +373,7 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ┃🕸│ 𝗧𝗶𝗺𝗲 : ${getCurrentTimeInNairobi()} on ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}
 ┃🕸│ 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗥𝗔𝗠 : 32𝗚𝗕 𝗼𝗳 64𝗚𝗕
 ┃🕸│═════════════════════
-┃🕸│█▀██████▀█▀██▀███▄█▀█
+┃🕸│🆂🅿🅸🅳🅴🆁'🆂 🅱🅾🆃
 ┃🕸│═════════════════════
 ╰══──────────────────══╯
 ●════ 〘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 〙═──═●
@@ -423,7 +423,7 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ╭══───────◇───────══╮
 ┃🕸│ 𝗔𝗶
 ┃🕸│ 𝗔𝗶2
-┃🕸│ 𝗩𝗶𝘀𝗶𝗼𝗻
+┃🕸│ 𝐖𝐞𝐛𝐱
 ┃🕸│ 𝗗𝗲𝗳𝗶𝗻𝗲
 ┃🕸│ 𝗗𝗮𝗿𝗸𝗴𝗽𝘁
 ┃🕸│ 𝐒𝐩𝐢𝐝𝐞𝐲
@@ -838,7 +838,7 @@ const fetch = require("node-fetch");
 //========================================================================================================================//		      
 		      case "credits": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://files.catbox.moe/32zvqb.jpg' }, caption: `We express sincere gratitude and acknowledgement to the following:\n\n -Dika Ardnt ➪ Indonesia\n - Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Nick Hunter ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/HunterNick2\n\n - Keithkeizzah (Ghost) ➪ Kenya\n - Compiling and debugging parts of this bot script\nhttps://github.com/Keithkeizzah\n\n - Fortunatus Mokaya ➪ Kenya\n - Founder of the bot Base\nhttps://github.com/Fortunatusmokaya\n\n𝐒𝐏𝐈𝐃𝐄𝐑-𝐁𝐎𝐓`}, { quoted: m}); 
+              client.sendMessage(m.chat, { image: { url: 'https://files.catbox.moe/32zvqb.jpg' }, caption: `We express sincere gratitude and acknowledgement to the following:\n\n -Dika Ardnt ➪ Indonesia\n - Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Lau spidey ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/spider660\n\n - Keithkeizzah (Ghost) ➪ Kenya\n - Compiling and debugging parts of this bot script\nhttps://github.com/Keithkeizzah\n\n - Fortunatus Mokaya ➪ Kenya\n - Founder of the bot Base\nhttps://github.com/Fortunatusmokaya\n\n𝐒𝐏𝐈𝐃𝐄𝐑-𝐁𝐎𝐓`}, { quoted: m}); 
                
 		      break;
 
@@ -1854,7 +1854,7 @@ try {
 
 if (!m.quoted) return m.reply("Send the image then tag it with the instruction.");
 
-if (!text) return m.reply("𝗣𝗿𝗼𝘃𝗶𝗱𝗲 𝘀𝗼𝗺𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝗲𝗵! 𝗧𝗵𝗶𝘀 Raven AI 𝗨𝘀𝗲 𝗚𝗲𝗺𝗶𝗻𝗶-𝗽𝗿𝗼-𝘃𝗶𝘀𝗶𝗼𝗻 𝘁𝗼 𝗮𝗻𝗮𝗹𝘆𝘀𝗲 𝗶𝗺𝗮𝗴𝗲𝘀.");
+if (!text) return m.reply("𝗣𝗿𝗼𝘃𝗶𝗱𝗲 𝘀𝗼𝗺𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝗲𝗵! 𝗧𝗵𝗶𝘀 𝐒𝐏𝐈𝐃𝐄𝐑 AI 𝗨𝘀𝗲 𝗚𝗲𝗺𝗶𝗻𝗶-𝗽𝗿𝗼-𝘃𝗶𝘀𝗶𝗼𝗻 𝘁𝗼 𝗮𝗻𝗮𝗹𝘆𝘀𝗲 𝗶𝗺𝗮𝗴𝗲𝘀.");
 
 
 
@@ -1884,9 +1884,9 @@ m.reply("I am unable to analyze images at the moment\n" + e)
 		break;
 
 //========================================================================================================================//		      
-	      case "vision": {
+	      case "webx": {
 		      if (!msgR || !text) {
-    m.reply("𝗤𝘂𝗼𝘁𝗲 𝗮𝗻 𝗶𝗺𝗮𝗴𝗲 𝗮𝗻𝗱 𝗴𝗶𝘃𝗲 𝘀𝗼𝗺𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝗲𝗵. 𝗜'𝗺 𝗥𝗔𝗩𝗘𝗡 𝗔𝗶, 𝗶 𝘂𝘀𝗲 𝗕𝗮𝗿𝗱 𝘁𝗼 𝗮𝗻𝗮𝗹𝘆𝘇𝗲 𝗶𝗺𝗮𝗴𝗲𝘀.");
+    m.reply("𝗤𝘂𝗼𝘁𝗲 𝗮𝗻 𝗶𝗺𝗮𝗴𝗲 𝗮𝗻𝗱 𝗴𝗶𝘃𝗲 𝘀𝗼𝗺𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝗲𝗵. 𝗜'𝗺 𝐒𝐏𝐈𝐃𝐄𝐑 𝗔𝗶, 𝗶 𝘂𝘀𝗲 𝗕𝗮𝗿𝗱 𝘁𝗼 𝗮𝗻𝗮𝗹𝘆𝘇𝗲 𝗶𝗺𝗮𝗴𝗲𝘀.");
     return;
   }
   ;
@@ -2068,7 +2068,7 @@ const imageurl = `https://some-random-api.com/canvas/misc/tweet?displayname=${en
 
 
 
-await client.sendMessage(m.chat, { image: { url: imageurl}, caption: `𝗖𝗼𝗻𝘃𝗲𝗿𝘁𝗲𝗱 𝗯𝘆 𝗥𝗔𝗩𝗘𝗡-𝗕𝗢𝗧`}, { quoted: m}) 
+await client.sendMessage(m.chat, { image: { url: imageurl}, caption: `𝗖𝗼𝗻𝘃𝗲𝗿𝘁𝗲𝗱 𝗯𝘆 𝐒𝐏𝐈𝐃𝐄𝐑-𝗕𝗢𝗧`}, { quoted: m}) 
 
 	}
 	 break;
@@ -2326,7 +2326,7 @@ m.reply("An error occured.")
         mimetype: 'audio/mp4',
         ptt: true,
         waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "𝗥𝗮𝘃𝗲𝗻",
+        fileName: "SPIDER",
 
         contextInfo: {
           mentionedJid: [m.sender],
@@ -2513,7 +2513,7 @@ const rel = await quote(xf, pushname, pppuser)
                 
                 client.sendImageAsSticker(m.chat, rel.result, m, {
                     packname: pushname,
-                    author: `Ravenbot`
+                    author: `spiderbot`
                 })
 
 } catch (errr) { 
