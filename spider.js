@@ -458,6 +458,7 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ┃🕸│ 𝗟𝗲𝗮𝘃𝗲
 ┃🕸│ 𝗔𝗱𝗱
 ┃🕸│ 𝗧𝗮𝗴𝗮𝗹𝗹
+┃🕸│ 𝐂𝐫𝐞𝐝𝐢𝐭 𝐜𝐚𝐫𝐝
 ┃🕸│ 𝗛𝗶𝗱𝗲𝘁𝗮𝗴
 ┃🕸│ 𝗥𝗲𝘃𝗼𝗸𝗲
 ┃🕸│ 𝗠𝘂𝘁𝗲
@@ -620,10 +621,40 @@ console.log(advice());
 
 break;
 //========================================================================================================================//
+case "cc": case "creditcard": {
+    try {
+        let [type, jumlah] = args;
+        let validTypes = ["MasterCard", "Visa", "Amex", "Discover"];
+        if (!type || !validTypes.includes(type)) {
+            return m.reply(`⚠️ Format ! Provide type: MasterCard, Visa, Amex, Discover.\n\n🔰 *Use:*\nKetik: *vcc <type> <jumlah>*\nExample: *cc Visa 3*`);
+        }
+        jumlah = jumlah && !isNaN(jumlah) ? parseInt(webx) : 5;
+        if (jumlah < 1 || jumlah > 10) return m.reply("⚠️ Jumlah VCC minimal 1 dan maksimal 10!");
+        const response = await fetch(`https://api.siputzx.my.id/api/tools/vcc-generator?type=${type}&count=${jumlah}`);
+        const data = await response.json();
+        if (!data.status || !data.data) return m.reply("⚠️ error.");
+        let message = `💳 *Virtual Credit Card (VCC) - ${type}*\n\n`;
+        data.data.forEach((card, index) => {
+            message += ` *Card ${index + 1}*\n` +
+                `• 🏷️ Name: ${card.cardholderName}\n` +
+                `• 💳 Number: ${card.cardNumber}\n` +
+                `• 📆 Exp: ${card.expirationDate}\n` +
+                `• 🔐 CVV: ${card.cvv}\n\n`;
+        });
+        m.reply(message);
+    } catch (err) {
+        console.error(err);
+        m.reply("⚠️ failed to create  VCC./n/n ")/n/n𝐒𝐏𝐈𝐃𝐄𝐑 𝐁𝐎𝐓
+    }
+}
+    break;  
 		      
+//========================================================================================================================//		      
 case "owner":
-client.sendContact(from, maindev2, m)
-break;
+    const name = "Spider bouy"; 
+    const contact = "0718303684"; 
+    client.sendContact(from, SPIDER, m);
+    break;
 
 //========================================================================================================================//
 		      case "lyrics2": 
