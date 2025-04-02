@@ -294,6 +294,36 @@ await client.sendMessage(from, {text: lod[i], edit: key });
         };
 //========================================================================================================================//
 //========================================================================================================================//
+// Predefined list of motivational quotes
+const motivationalQuotes = [
+  "Believe in yourself! Every day is a new opportunity.",
+  "Keep going, you're doing great!",
+  "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+  "Hardships often prepare ordinary people for an extraordinary destiny.",
+  "The only limit to our realization of tomorrow is our doubts of today."
+];
+
+// Function to get a random motivational quote
+const getMotivationalQuote = () => {
+  const randomIndex = Math.floor(Math.random() * motivationalQuotes.length);
+  return motivationalQuotes[randomIndex];
+};
+//========================================================================================================================//
+//========================================================================================================================//
+const axios = require('axios');
+
+// Function to get a motivational quote from an API
+const getMotivationalQuoteFromAPI = async () => {
+  try {
+    const response = await axios.get('https://zenquotes.io/api/random');
+    return response.data[0].q; // Getting the quote text
+  } catch (error) {
+    console.error("Error fetching quote:", error);
+    return "Stay positive, keep pushing forward!";
+  }
+};
+//========================================================================================================================//
+//========================================================================================================================//
         const getCurrentTimeInNairobi = () => {
             return DateTime.now().setZone('Africa/Nairobi').toLocaleString(DateTime.TIME_SIMPLE);
         };
@@ -373,7 +403,7 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ┃🕸│ 𝗧𝗶𝗺𝗲 : ${getCurrentTimeInNairobi()} on ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}
 ┃🕸│ 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗥𝗔𝗠 : 32𝗚𝗕 𝗼𝗳 64𝗚𝗕
 ┃🕸│═════════════════════
-┃🕸│🆂🅿🅸🅳🅴🆁'🆂 🅱🅾🆃
+┃🕸│✨ Motivation from webx: "${getMotivationalQuote()}"
 ┃🕸│═════════════════════
 ╰══──────────────────══╯
 ●════ 〘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 〙═──═●
@@ -382,11 +412,12 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ┃🕸│ 𝗣𝗹𝗮𝘆
 ┃🕸│ 𝗣𝗹𝗮𝘆2
 ┃🕸│ 𝗦𝗼𝗻𝗴
+┃🕸│ 𝐓𝐢𝐤𝐭𝐨𝐤𝐬𝐭𝐚𝐥𝐤
 ┃🕸│ 𝗦𝗼𝗻𝗴2
 ┃🕸│ 𝗙𝗯𝗱𝗹
 ┃🕸│ 𝗧𝗶𝗸𝘁𝗼𝗸
 ┃🕸│ 𝗧𝘄𝗶𝘁𝘁𝗲𝗿
-┃🕸│ 𝗶𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺
+┃🕸│ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦𝐬𝐭𝐚𝐥𝐤
 ┃🕸│ 𝗠𝗼𝘃𝗶𝗲
 ┃🕸│ 𝗟𝘆𝗿𝗶𝗰𝘀
 ┃🕸│ 𝗪𝗵𝗮𝘁𝘀𝗼𝗻𝗴
@@ -554,7 +585,7 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ●═══   〘 𝗠𝗜𝗦𝗖  〙 ═──═●
 ╭══───────◇───────══╮
 ┃🕸│ 𝗪𝗲𝗮𝘁𝗵𝗲𝗿
-┃🕸│ 𝗚𝗶𝘁𝗵𝘂𝗯
+┃🕸│ 𝐆𝐢𝐭𝐡𝐮𝐛𝐬𝐭𝐚𝐥𝐤
 ┃🕸│ 𝗚𝗶𝘁𝗰𝗹𝗼𝗻𝗲
 ┃🕸│ 𝗔𝗱𝘃𝗶𝗰𝗲
 ┃🕸│ 𝗥𝗲𝗺𝗼𝘃𝗲𝗯𝗴
@@ -572,6 +603,7 @@ let cap = `𝗛𝗲𝘆 𝘁𝗵𝗲𝗿𝗲😁, ${getGreeting()}\n\n╭══�
 ┃🕸│ 𝗨𝗽𝗹𝗼𝗮𝗱
 ┃🕸│ 𝗔𝘁𝘁𝗽
 ┃🕸│ 𝗨𝗿𝗹
+┃🕸│ 𝐓𝐫𝐚𝐜𝐤 𝐢𝐩
 ┃🕸│ 𝗜𝗺𝗮𝗴𝗲
 ┃🕸│ 𝗦𝘆𝘀𝘁𝗲𝗺
 ┃🕸╰═───────◇───────═╯
@@ -649,6 +681,117 @@ case "cc": case "creditcard": {
 }
     break;  
 		      
+//========================================================================================================================//
+case 'trackip':
+{
+if (!text) return m.reply(`*Example:* ${prefix + command} 112.90.150.204`);
+try {
+let res = await fetch(`https://ipwho.is/${text}`).then(result => result.json());
+
+const formatIPInfo = (info) => {
+ return `
+*IP Information*
+• IP: ${info.ip || 'N/A'}
+• Success: ${info.success || 'N/A'}
+• Type: ${info.type || 'N/A'}
+• Continent: ${info.continent || 'N/A'}
+• Continent Code: ${info.continent_code || 'N/A'}
+• Country: ${info.country || 'N/A'}
+• Country Code: ${info.country_code || 'N/A'}
+• Region: ${info.region || 'N/A'}
+• Region Code: ${info.region_code || 'N/A'}
+• City: ${info.city || 'N/A'}
+• Latitude: ${info.latitude || 'N/A'}
+• Longitude: ${info.longitude || 'N/A'}
+• Is EU: ${info.is_eu ? 'Yes' : 'No'}
+• Postal: ${info.postal || 'N/A'}
+• Calling Code: ${info.calling_code || 'N/A'}
+• Capital: ${info.capital || 'N/A'}
+• Borders: ${info.borders || 'N/A'}
+• Flag:
+ - Image: ${info.flag?.img || 'N/A'}
+ - Emoji: ${info.flag?.emoji || 'N/A'}
+ - Emoji Unicode: ${info.flag?.emoji_unicode || 'N/A'}
+• Connection:
+ - ASN: ${info.connection?.asn || 'N/A'}
+ - Organization: ${info.connection?.org || 'N/A'}
+ - ISP: ${info.connection?.isp || 'N/A'}
+ - Domain: ${info.connection?.domain || 'N/A'}
+• Timezone:
+ - ID: ${info.timezone?.id || 'N/A'}
+ - Abbreviation: ${info.timezone?.abbr || 'N/A'}
+ - Is DST: ${info.timezone?.is_dst ? 'Yes' : 'No'}
+ - Offset: ${info.timezone?.offset || 'N/A'}
+ - UTC: ${info.timezone?.utc || 'N/A'}
+ - Current Time: ${info.timezone?.current_time || 'N/A'}
+`;
+};
+ 
+if (!res.success) throw new Error(`IP ${text} not found!`);
+await Raven.sendMessage(m.chat, { location: { degreesLatitude: res.latitude, degreesLongitude: res.longitude } }, { ephemeralExpiration: 604800 });
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+await delay(2000);
+m.reply(formatIPInfo(res)); 
+} catch (e) { 
+m.reply(`Error: Unable to retrieve data for IP ${text}`);
+}
+}
+break;
+
+//========================================================================================================================//
+case 'igstalk': {
+if (!args[0]) return m.reply(`Enter Instagram Username\n\nExample: ${prefix + command} webx_`)
+const fg = require('api-dylux')
+    try {
+    let res = await fg.igStalk(args[0])
+    let te = `
+┌──「 *STALKING* 
+▢ *🔖Name:* ${res.name} 
+▢ *🔖Username:* ${res.username}
+▢ *👥Follower:* ${res.followersH}
+▢ *🫂Following:* ${res.followingH}
+▢ *📌Bio:* ${res.description}
+▢ *🏝️Posts:* ${res.postsH}
+▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
+└────────────`
+     await Bellah.sendMessage(m.chat, {image: { url: res.profilePic }, caption: te }, {quoted: loli})
+      } catch {
+        m.reply(`Make sure the username comes from *Instagram*`)
+      }
+}
+break
+
+//========================================================\\
+case 'ghstalk': case 'githubstalk':{
+if (!q) return m.reply(`Example ${prefix+command} spider660`)
+await reply(`processing data`)
+let githubstalk = require('./lib/scraper')
+aj = await githubstalk.githubstalk(`${q}`)
+Raven.sendMessage(m.chat, { image: { url : aj.profile_pic }, caption: 
+`*/ Github Stalker \\*
+
+Username : ${aj.username}
+Nickname : ${aj.nickname}
+Bio : ${aj.bio}
+Id : ${aj.id}
+Nodeid : ${aj.nodeId}
+Url Profile : ${aj.profile_pic}
+Url Github : ${aj.url}
+Type : ${aj.type}
+Admin : ${aj.admin}
+Company : ${aj.company}
+Blog : ${aj.blog}
+Location : ${aj.location}
+Email : ${aj.email}
+Public Repo : ${aj.public_repo}
+Public Gists : ${aj.public_gists}
+Followers : ${aj.followers}
+Following : ${aj.following}
+Created At : ${aj.ceated_at}
+Updated At : ${aj.updated_at}` }, { quoted: loli } )
+}
+break;
+	      
 //========================================================================================================================//		      
 case "owner":
     const name = "Spider bouy"; 
@@ -671,7 +814,41 @@ case "owner":
          }
         break;
 		      
-//========================================================================================================================//	      
+//========================================================================================================================//
+case 'tiktokstalk':
+case 'webxtiktokstalk': {
+    if (!text) return m.reply(`Provide TikTok Username\n\nExample: ${prefix + command} `);
+    Bellah.sendMessage(m.chat, { react: { text: '🕒', key: m.key } });
+    
+    try {
+        const respon = await fetchJson(`https://api.elxyzgpt.xyz/stalk/tiktok?apikey=KC-d25a3f0c02be4021&username=${encodeURIComponent(text)}`);
+        const user = respon.result.user;
+        const stats = respon.result.stats;
+        let teks = `
+┌──「 *STALKING* 」
+▢ *🔖 Name:* ${user.nickname}
+▢ *🔖 Username:* ${user.uniqueId}
+▢ *👥 Followers:* ${stats.followerCount}
+▢ *🫂 Following:* ${stats.followingCount}
+▢ *📌 Bio:* ${user.signature}
+▢ *🏝️ Posts:* ${stats.videoCount}
+▢ *❣️ Likes:* ${stats.heartCount}
+▢ *🔗 Link:* https://tiktok.com/@${user.uniqueId}
+└────────────`;
+
+        await Raven.sendMessage(
+            m.chat, 
+            { image: { url: user.avatarLarger }, caption: teks }, 
+            { quoted: loli }
+        );
+    } catch (err) {
+        console.error(err);
+        m.reply(`yooh. Provide valid TikTok username.`);
+    }
+}
+break;
+   
+//========================================================================================================================//		      
 	case "play": {
  const yts = require("yt-search");
 
