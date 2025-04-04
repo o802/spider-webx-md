@@ -1,4 +1,4 @@
-
+no
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require("@whiskeysockets/baileys");
 const fs = require("fs");
 const path = require('path');
@@ -2992,7 +2992,7 @@ const { igdl } = require("ruhend-scraper");
       await client.sendMessage(m.chat, {
         video: { url: videoUrl },
         mimetype: "video/mp4",
-        caption: `DOWNLOADED BY ${botname}`
+        caption: `DOWNLOADED BY SPIDER BOT`
       },{ quoted: m });
     }
   } catch (error) {
