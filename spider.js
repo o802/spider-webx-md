@@ -10,7 +10,6 @@ const Genius = require("genius-lyrics");
 const yts = require("yt-search");
 const { DateTime } = require('luxon');
 const uploadtoimgur = require('./lib/imgur.js');
-const uploadToCatbox = require('./lib/catbox');
 const advice = require("badadvice");
 const {c, cpp, node, python, java} = require('compile-run');
 const acrcloud = require("acrcloud"); 
